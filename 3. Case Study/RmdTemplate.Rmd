@@ -1,0 +1,82 @@
+---
+title: "Simple template for R Markdown"
+subtitle: "For submission of homework assignments in 107.258"
+author: "LV"
+date: "16.11.2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## General information:
+
+R Markdown conveniently combines R code with textual explanations (in Latex or html coding). This is useful for producing the homework assignments. 
+
+Solve the tasks with R code which you will place using code chunks (see below), and write text to answer the questions or comment on your code.  Keep the document readable and neat. Headers can be introduced using the `#` symbol (`#` for Heading 1, `##` Heading 2 etc.).
+Always show the R code - never hide it (`echo = TRUE` must be set either at the beginning of the document, as in this template, or in each code chunk).
+
+R and RStudio need to be installed, as well as \LaTeX. Then open this file in RStudio with
+*File - Open File*, and press the button *Knit*. The result is a pdf file. 
+
+**Submit both, the .Rmd and the .pdf file on TUWEL.**
+
+Here you have some simple examples:
+
+# Task 1: Executing code and showing the output
+
+## 1. Executing code
+
+Here `echo = TRUE` is not necessarily needed, as it has been set as global option.
+
+```{r, echo=TRUE}
+data(Auto, package="ISLR")
+x <- Auto[,-9]
+```
+
+## 2. Showing output
+
+
+
+The following chunk type will not be needed for the homework, but can be nevertheless useful. 
+We produce output from R which should be shown as a text in the document (not as an R output). This is achieved using `results='asis'`. Also, if in this specific case we would like to hide the R code which generated the output, we can set `echo = FALSE`. This way, dynamic documents can be produced.
+
+```{r, echo=FALSE, results='asis'}
+cat(paste("Folgende summary fasst die Variablen", paste(colnames(x), collapse = ", "),
+          "zusammen:"))
+```
+```{r}
+summary(x)
+```
+
+
+If you want to insert inline code in the text, have a look at the following example:
+
+```{r echo = FALSE}
+# we may want to not show this code in the final document
+year_of_course <- 2021
+```
+
+This document has been produced in `r year_of_course`. 
+
+Finally, say you have some code that you either do not want to run, or you simply can bring to run :-( in time for submission. In case of mistakes in the R codes, the R Markdown cannot be generated. If you want R to not run this chunk you should set `eval = FALSE`.
+
+```{r eval = FALSE}
+z <- "A character string where I forgot to close the quotes
+```
+If you want to return `z`, R will not find it as the code has not been executed.
+
+
+# Task 2: Plotting
+
+Plot the selected data, with origin as color and symbol
+
+```{r, fig.width=6,fig.height=4}
+plot(x, col = x$origin, pch = x$origin)
+```
+
+```{r, fig.align='center', fig.width=4, fig.height=4}
+plot(1:10)
+lines(1:10, 1:10)
+```
