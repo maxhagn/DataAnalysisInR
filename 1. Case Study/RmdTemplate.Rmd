@@ -1,8 +1,8 @@
 ---
-title: "Simple template for R Markdown"
-subtitle: "For submission of homework assignments in 107.258"
-author: "LV"
-date: "16.11.2021"
+title: "Case Study 1"
+subtitle: "AKSTA Statistical Computing 107.258"
+author: "Maximilian Hagn"
+date: "21. April 2022"
 output: pdf_document
 ---
 
@@ -10,73 +10,214 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## General information:
+# Ratio of Fibonacci numbers
 
-R Markdown conveniently combines R code with textual explanations (in Latex or html coding). This is useful for producing the homework assignments. 
-
-Solve the tasks with R code which you will place using code chunks (see below), and write text to answer the questions or comment on your code.  Keep the document readable and neat. Headers can be introduced using the `#` symbol (`#` for Heading 1, `##` Heading 2 etc.).
-Always show the R code - never hide it (`echo = TRUE` must be set either at the beginning of the document, as in this template, or in each code chunk).
-
-R and RStudio need to be installed, as well as \LaTeX. Then open this file in RStudio with
-*File - Open File*, and press the button *Knit*. The result is a pdf file. 
-
-**Submit both, the .Rmd and the .pdf file on TUWEL.**
-
-Here you have some simple examples:
-
-# Task 1: Executing code and showing the output
-
-## 1. Executing code
-
-Here `echo = TRUE` is not necessarily needed, as it has been set as global option.
+## Using a for Loop
 
 ```{r, echo=TRUE}
-data(Auto, package="ISLR")
-x <- Auto[,-9]
+fibonacci_for <- function(n) {
+  f_i <- 1
+  zahl1 <- 0
+  zahl2 <- 1
+  for(i in 0:(n-1)) {
+    f_i = zahl1 + zahl2
+    zahl1 = zahl2
+    zahl2 = f_i
+  }
+  return(zahl2/zahl1)
+}
 ```
 
-## 2. Showing output
+## Using a while Loop
 
-
-
-The following chunk type will not be needed for the homework, but can be nevertheless useful. 
-We produce output from R which should be shown as a text in the document (not as an R output). This is achieved using `results='asis'`. Also, if in this specific case we would like to hide the R code which generated the output, we can set `echo = FALSE`. This way, dynamic documents can be produced.
-
-```{r, echo=FALSE, results='asis'}
-cat(paste("Folgende summary fasst die Variablen", paste(colnames(x), collapse = ", "),
-          "zusammen:"))
-```
-```{r}
-summary(x)
-```
-
-
-If you want to insert inline code in the text, have a look at the following example:
-
-```{r echo = FALSE}
-# we may want to not show this code in the final document
-year_of_course <- 2021
+```{r, echo=TRUE}
+fibonacci_while <- function(n) {
+  i = 0
+  f_i <- 1
+  zahl1 <- 0
+  zahl2 <- 1
+  while(i <= (n-1)) {
+    f_i = zahl1 + zahl2
+    zahl1 = zahl2
+    zahl2 = f_i
+    i = i + 1
+  }
+  return(zahl2/zahl1)
+}
 ```
 
-This document has been produced in `r year_of_course`. 
+## Benchmark
 
-Finally, say you have some code that you either do not want to run, or you simply can bring to run :-( in time for submission. In case of mistakes in the R codes, the R Markdown cannot be generated. If you want R to not run this chunk you should set `eval = FALSE`.
+```{r, echo=TRUE}
+library(microbenchmark)
+n <- 100
+m <- 1000
 
-```{r eval = FALSE}
-z <- "A character string where I forgot to close the quotes
+mbm_n <- microbenchmark(fibonacci_for(n), fibonacci_while(n))
+mbm_n
+
+mbm_m <- microbenchmark(fibonacci_for(m), fibonacci_while(m))
+mbm_m
 ```
-If you want to return `z`, R will not find it as the code has not been executed.
 
+Hier kommt eine Erklärung hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-# Task 2: Plotting
+## Plot
 
-Plot the selected data, with origin as color and symbol
-
-```{r, fig.width=6,fig.height=4}
-plot(x, col = x$origin, pch = x$origin)
+```{r, echo=TRUE}
+library(ggplot2)
 ```
 
 ```{r, fig.align='center', fig.width=4, fig.height=4}
-plot(1:10)
-lines(1:10, 1:10)
+autoplot(mbm_n) #n = 100
 ```
+
+```{r, fig.align='center', fig.width=4, fig.height=4}
+autoplot(mbm_m) #m = 1000
+```
+
+Hier kommt eine Erklärung hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# The golden ratio
+
+```{r, echo=TRUE}
+golden_ratio_fib_test <- function(n) {
+  print(fibonacci_for(n)/fibonacci_for(n-1))
+  print((fibonacci_for(n) + fibonacci_for(n-1)) / fibonacci_for(n))
+}
+
+golden_ratio <- (sqrt(5) + 1)/2
+
+test_vals = c(1, 5, 10, 25, 40, 50, 100, 500, 1000)
+
+check_golden_ratio_1 <- function(vals) {
+  for(i in vals){
+    print(paste("fibonacci(", i, "): ", fibonacci_for(i) == golden_ratio))
+  }
+}
+
+check_golden_ratio_1(test_vals)
+
+```
+
+
+# Game of craps
+
+Hier kommt eine Erklärung hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+```{r, echo=TRUE}
+
+game_of_craps <- function() {
+  #First round
+  round <- 1
+  dice_1 <- sample(1:6, 1)
+  dice_2 <- sample(1:6, 1)
+  dice_sum <- dice_1 + dice_2
+  first_x <- dice_1 + dice_2
+  if(dice_sum == 7 || dice_sum == 11){
+    return(paste("Game won in round ", round, "| x = ", dice_sum))
+  }
+  #Following rounds
+  while(TRUE) {
+    round = round + 1
+    dice_1 <- sample(1:6, 1)
+    dice_2 <- sample(1:6, 1)
+    dice_sum <- dice_1 + dice_2
+    if(dice_sum == first_x){
+      return(paste("Game won in round ", round, "| x = ", dice_sum))
+    }
+    if(dice_sum == 7 || dice_sum == 11){
+      return(paste("Game lost in round ", round, "| x = ", dice_sum))
+    }
+  }
+}
+
+```
+
+Hier kommt eine Erklärung hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Hier kommt eine Erklärung hin. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Readable and efficient code
+
+## foobar0
+
+```{r, echo=TRUE}
+
+foobar0 <- function(x, z) {
+  set.seed(1)
+  
+  if (sum(x >= .001) < 1) {
+    stop("step 1 requires 1 observation(s) with value >= .001")
+  }
+  
+  fit <- lm(x ~ z)
+  r <- fit$residuals
+  x <- sin(r) + .01
+  
+  if (sum(x >= .002) < 2) {
+    stop("step 2 requires 2 observation(s) with value >= .002")
+  }
+  
+  fit <- lm(x ~ z)
+  r <- fit$residuals
+  x <- 2 * sin(r) + .02
+  if (sum(x >= .003) < 3) {
+   stop("step 3 requires 3 observation(s) with value >= .003")
+  }
+  
+  fit <- lm(x ~ z)
+  r <- fit$residuals
+  x <- 3 * sin(r) + .03
+  
+  if (sum(x >= .004) < 4) {
+    stop("step 4 requires 4 observation(s) with value >= .004")
+  }
+  
+  fit <- lm(x ~ z)
+  r <- fit$residuals
+  x <- 4 * sin(r) + .04
+  
+  return(x)
+}
+
+```
+
+## Rewrite
+
+```{r, echo=TRUE}
+
+check_input <- function(x, step) {
+  if (sum(x >= (step * .001)) < step) {
+    stop(paste("step ", step, " requires ", step, " observation(s) with value >= ", (step * .001)))
+  }
+}
+  
+compute <- function(x, z, step) {
+  fit <- lm(x ~ z)
+  r <- fit$residuals
+  x <- step * sin(r) + (.01 * step)
+  return(x)
+}
+  
+foobar <- function(x, z) {
+  set.seed(1)
+  check_input(x, 1)
+  x <- compute(x, z, 1)
+  check_input(x, 2)
+  x <- compute(x, z, 2)
+  check_input(x, 3)
+  x <- compute(x, z, 3)
+  check_input(x, 4)
+  x <- compute(x, z, 4)
+  return(x)
+}
+
+```
+
+## Equality
+
+```{r, echo=TRUE}
+
+all.equal(foobar0(rnorm(100), rnorm(100)), foobar(rnorm(100), rnorm(100)))
+
+```
+
