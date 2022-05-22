@@ -1,0 +1,269 @@
+"";"official_name_en";"ISO3166.1.Alpha.2";"ISO3166.1.Alpha.3";"Developed...Developing.Countries";"Region.Name";"Sub.region.Name";"Country";"median";"youth_unempl_rate";"above_average_median_age";"above_average_yu"
+"1";"";"TW";"TWN";"";"";"";"Taiwan";42,3;.;.;.
+"2";"Afghanistan";"AF";"AFG";"Developing";"Asia";"Southern Asia";"Afghanistan";19,5;17,6;"no";"yes"
+"3";"Albania";"AL";"ALB";"Developed";"Europe";"Southern Europe";"Albania";34,3;31,9;"no";"yes"
+"4";"Algeria";"DZ";"DZA";"Developing";"Africa";"Northern Africa";"Algeria";28,9;39,3;"yes";"yes"
+"5";"American Samoa";"AS";"ASM";"Developing";"Oceania";"Polynesia";"American Samoa";27,2;.;"no";.
+"6";"Andorra";"AD";"AND";"Developed";"Europe";"Southern Europe";"Andorra";46,2;.;"yes";.
+"7";"Angola";"AO";"AGO";"Developing";"Africa";"Sub-Saharan Africa";"Angola";15,9;39,4;"no";"yes"
+"8";"Anguilla";"AI";"AIA";"Developing";"Americas";"Latin America and the Caribbean";"Anguilla";35,7;.;"yes";.
+"9";"Antarctica";"AQ";"ATA";"";"";"";"Antarctica";.;.;.;.
+"10";"Antigua and Barbuda";"AG";"ATG";"Developing";"Americas";"Latin America and the Caribbean";"Antigua and Barbuda";32,7;.;"no";.
+"11";"Argentina";"AR";"ARG";"Developing";"Americas";"Latin America and the Caribbean";"Argentina";32,4;23,7;"no";"yes"
+"12";"Armenia";"AM";"ARM";"Developing";"Asia";"Western Asia";"Armenia";36,6;36,3;"yes";"yes"
+"13";"Aruba";"AW";"ABW";"Developing";"Americas";"Latin America and the Caribbean";"Aruba";39,9;.;"yes";.
+"14";"Australia";"AU";"AUS";"Developed";"Oceania";"Australia and New Zealand";"Australia";37,5;11,8;"yes";"no"
+"15";"Austria";"AT";"AUT";"Developed";"Europe";"Western Europe";"Austria";44,5;9,4;"yes";"no"
+"16";"Azerbaijan";"AZ";"AZE";"Developing";"Asia";"Western Asia";"Azerbaijan";32,6;13,4;"yes";"no"
+"17";"Bahamas";"BS";"BHS";"Developing";"Americas";"Latin America and the Caribbean";"Bahamas, The";32,8;25,8;"no";"yes"
+"18";"Bahrain";"BH";"BHR";"Developing";"Asia";"Western Asia";"Bahrain";32,9;5,3;"yes";"no"
+"19";"Bangladesh";"BD";"BGD";"Developing";"Asia";"Southern Asia";"Bangladesh";27,9;12,8;"no";"no"
+"20";"Barbados";"BB";"BRB";"Developing";"Americas";"Latin America and the Caribbean";"Barbados";39,5;29,6;"yes";"yes"
+"21";"Belarus";"BY";"BLR";"Developed";"Europe";"Eastern Europe";"Belarus";40,9;10,6;"no";"no"
+"22";"Belgium";"BE";"BEL";"Developed";"Europe";"Western Europe";"Belgium";41,6;15,8;"no";"no"
+"23";"Belize";"BZ";"BLZ";"Developing";"Americas";"Latin America and the Caribbean";"Belize";23,9;15,3;"no";"no"
+"24";"Benin";"BJ";"BEN";"Developing";"Africa";"Sub-Saharan Africa";"Benin";17;5,6;"no";"no"
+"25";"Bermuda";"BM";"BMU";"Developed";"Americas";"Northern America";"Bermuda";43,6;29,3;"yes";"yes"
+"26";"Bhutan";"BT";"BTN";"Developing";"Asia";"Southern Asia";"Bhutan";29,1;10,7;"no";"no"
+"27";"Bolivia (Plurinational State of)";"BO";"BOL";"Developing";"Americas";"Latin America and the Caribbean";"Bolivia";25,3;6,9;"no";"no"
+"28";"Bonaire, Sint Eustatius and Saba";"BQ";"BES";"Developing";"Americas";"Latin America and the Caribbean";.;.;.;.;.
+"29";"Bosnia and Herzegovina";"BA";"BIH";"Developed";"Europe";"Southern Europe";"Bosnia and Herzegovina";43,3;33,8;"yes";"yes"
+"30";"Botswana";"BW";"BWA";"Developing";"Africa";"Sub-Saharan Africa";"Botswana";25,7;36;"yes";"yes"
+"31";"Bouvet Island";"BV";"BVT";"Developing";"Americas";"Latin America and the Caribbean";"Bouvet Island";.;.;.;.
+"32";"Brazil";"BR";"BRA";"Developing";"Americas";"Latin America and the Caribbean";"Brazil";33,2;28,5;"no";"yes"
+"33";"British Indian Ocean Territory";"IO";"IOT";"Developing";"Africa";"Sub-Saharan Africa";"British Indian Ocean Territory";.;.;.;.
+"34";"British Virgin Islands";"VG";"VGB";"Developing";"Americas";"Latin America and the Caribbean";"British Virgin Islands";37,2;.;"yes";.
+"35";"Brunei Darussalam";"BN";"BRN";"Developing";"Asia";"South-eastern Asia";"Brunei";31,1;28,9;"yes";"yes"
+"36";"Bulgaria";"BG";"BGR";"Developed";"Europe";"Eastern Europe";"Bulgaria";43,7;12,7;"yes";"no"
+"37";"Burkina Faso";"BF";"BFA";"Developing";"Africa";"Sub-Saharan Africa";"Burkina Faso";17,9;8,7;"no";"no"
+"38";"Burundi";"BI";"BDI";"Developing";"Africa";"Sub-Saharan Africa";"Burundi";17,7;2,9;"no";"no"
+"39";"Cabo Verde";"CV";"CPV";"Developing";"Africa";"Sub-Saharan Africa";"Cape Verde";.;.;.;.
+"40";"Cambodia";"KH";"KHM";"Developing";"Asia";"South-eastern Asia";"Cambodia";26,4;1,1;"no";"no"
+"41";"Cameroon";"CM";"CMR";"Developing";"Africa";"Sub-Saharan Africa";"Cameroon";18,5;6,3;"no";"no"
+"42";"Canada";"CA";"CAN";"Developed";"Americas";"Northern America";"Canada";41,8;11,1;"yes";"no"
+"43";"Cayman Islands";"KY";"CYM";"Developing";"Americas";"Latin America and the Caribbean";"Cayman Islands";40,5;13,8;"yes";"no"
+"44";"Central African Republic";"CF";"CAF";"Developing";"Africa";"Sub-Saharan Africa";"Central African Republic";20;.;"no";.
+"45";"Chad";"TD";"TCD";"Developing";"Africa";"Sub-Saharan Africa";"Chad";16,1;.;"no";.
+"46";"Chile";"CL";"CHL";"Developing";"Americas";"Latin America and the Caribbean";"Chile";35,5;18,1;"yes";"yes"
+"47";"China";"CN";"CHN";"Developing";"Asia";"Eastern Asia";"China";38,4;.;"yes";.
+"48";"China, Hong Kong Special Administrative Region";"HK";"HKG";"Developing";"Asia";"Eastern Asia";"Hong Kong";45,6;8,7;"yes";"no"
+"49";"China, Macao Special Administrative Region";"MO";"MAC";"Developing";"Asia";"Eastern Asia";"Macau";40,8;5,3;"yes";"no"
+"50";"Christmas Island";"CX";"CXR";"Developed";"Oceania";"Australia and New Zealand";"Christmas Island";.;.;.;.
+"51";"Cocos (Keeling) Islands";"CC";"CCK";"Developed";"Oceania";"Australia and New Zealand";"Cocos (Keeling) Islands";.;.;.;.
+"52";"Colombia";"CO";"COL";"Developing";"Americas";"Latin America and the Caribbean";"Colombia";31,2;18,5;"no";"yes"
+"53";"Comoros";"KM";"COM";"Developing";"Africa";"Sub-Saharan Africa";"Comoros";20,9;19,5;"no";"yes"
+"54";"Congo";"CG";"COG";"Developing";"Africa";"Sub-Saharan Africa";"Congo, Republic of the";19,5;.;"no";.
+"55";"Cook Islands";"CK";"COK";"Developing";"Oceania";"Polynesia";"Cook Islands";38,3;.;"yes";.
+"56";"Costa Rica";"CR";"CRI";"Developing";"Americas";"Latin America and the Caribbean";"Costa Rica";32,6;20,6;"no";"yes"
+"57";"Croatia";"HR";"HRV";"Developed";"Europe";"Southern Europe";"Croatia";43,9;23,7;"yes";"yes"
+"58";"Cuba";"CU";"CUB";"Developing";"Americas";"Latin America and the Caribbean";"Cuba";42,1;6,1;"yes";"no"
+"59";"Curaçao";"CW";"CUW";"Developing";"Americas";"Latin America and the Caribbean";.;.;.;.;.
+"60";"Cyprus";"CY";"CYP";"Developed";"Asia";"Western Asia";"Cyprus";37,9;20,2;"yes";"yes"
+"61";"Czechia";"CZ";"CZE";"Developed";"Europe";"Eastern Europe";"Czech Republic";.;.;.;.
+"62";"Côte d'Ivoire";"CI";"CIV";"Developing";"Africa";"Sub-Saharan Africa";"Cote d'Ivoire";20,3;5,5;"no";"no"
+"63";"Democratic People's Republic of Korea";"KP";"PRK";"Developing";"Asia";"Eastern Asia";"Korea, North";34,6;.;"yes";.
+"64";"Democratic Republic of the Congo";"CD";"COD";"Developing";"Africa";"Sub-Saharan Africa";"Congo, Democratic Republic of the";16,7;8,7;"no";"no"
+"65";"Denmark";"DK";"DNK";"Developed";"Europe";"Northern Europe";"Denmark";42;9,4;"no";"no"
+"66";"Djibouti";"DJ";"DJI";"Developing";"Africa";"Sub-Saharan Africa";"Djibouti";24,9;.;"yes";.
+"67";"Dominica";"DM";"DMA";"Developing";"Americas";"Latin America and the Caribbean";"Dominica";34,9;.;"yes";.
+"68";"Dominican Republic";"DO";"DOM";"Developing";"Americas";"Latin America and the Caribbean";"Dominican Republic";27,9;13,5;"no";"no"
+"69";"Ecuador";"EC";"ECU";"Developing";"Americas";"Latin America and the Caribbean";"Ecuador";28,8;7,9;"no";"no"
+"70";"Egypt";"EG";"EGY";"Developing";"Africa";"Northern Africa";"Egypt";24,1;29,6;"yes";"yes"
+"71";"El Salvador";"SV";"SLV";"Developing";"Americas";"Latin America and the Caribbean";"El Salvador";27,7;9,6;"no";"no"
+"72";"Equatorial Guinea";"GQ";"GNQ";"Developing";"Africa";"Sub-Saharan Africa";"Equatorial Guinea";20,3;.;"no";.
+"73";"Eritrea";"ER";"ERI";"Developing";"Africa";"Sub-Saharan Africa";"Eritrea";20,3;.;"no";.
+"74";"Estonia";"EE";"EST";"Developed";"Europe";"Northern Europe";"Estonia";43,7;11,8;"yes";"no"
+"75";"Eswatini";"SZ";"SWZ";"Developing";"Africa";"Sub-Saharan Africa";"Swaziland";.;.;.;.
+"76";"Ethiopia";"ET";"ETH";"Developing";"Africa";"Sub-Saharan Africa";"Ethiopia";19,8;25,2;"no";"yes"
+"77";"Falkland Islands (Malvinas)";"FK";"FLK";"Developing";"Americas";"Latin America and the Caribbean";"Falkland Islands (Islas Malvinas)";.;.;.;.
+"78";"Faroe Islands";"FO";"FRO";"Developed";"Europe";"Northern Europe";"Faroe Islands";37,2;.;"no";.
+"79";"Fiji";"FJ";"FJI";"Developing";"Oceania";"Melanesia";"Fiji";29,9;15,4;"yes";"no"
+"80";"Finland";"FI";"FIN";"Developed";"Europe";"Northern Europe";"Finland";42,8;17;"yes";"no"
+"81";"France";"FR";"FRA";"Developed";"Europe";"Western Europe";"France";41,7;20,8;"no";"yes"
+"82";"French Guiana";"GF";"GUF";"Developing";"Americas";"Latin America and the Caribbean";"French Guiana";.;.;.;.
+"83";"French Polynesia";"PF";"PYF";"Developing";"Oceania";"Polynesia";"French Polynesia";33,3;56,7;"yes";"yes"
+"84";"French Southern Territories";"TF";"ATF";"Developing";"Africa";"Sub-Saharan Africa";"French Southern and Antarctic Lands";.;.;.;.
+"85";"Gabon";"GA";"GAB";"Developing";"Africa";"Sub-Saharan Africa";"Gabon";21;35,7;"yes";"yes"
+"86";"Gambia";"GM";"GMB";"Developing";"Africa";"Sub-Saharan Africa";"Gambia, The";21,8;13,1;"yes";"no"
+"87";"Georgia";"GE";"GEO";"Developing";"Asia";"Western Asia";"Georgia";38,6;29,9;"yes";"yes"
+"88";"Germany";"DE";"DEU";"Developed";"Europe";"Western Europe";"Germany";47,8;6,2;"yes";"no"
+"89";"Ghana";"GH";"GHA";"Developing";"Africa";"Sub-Saharan Africa";"Ghana";21,4;9,1;"yes";"no"
+"90";"Gibraltar";"GI";"GIB";"Developed";"Europe";"Southern Europe";"Gibraltar";35,5;.;"no";.
+"91";"Greece";"GR";"GRC";"Developed";"Europe";"Southern Europe";"Greece";45,3;39,9;"yes";"yes"
+"92";"Greenland";"GL";"GRL";"Developed";"Americas";"Northern America";"Greenland";34,3;.;"yes";.
+"93";"Grenada";"GD";"GRD";"Developing";"Americas";"Latin America and the Caribbean";"Grenada";33,3;.;"no";.
+"94";"Guadeloupe";"GP";"GLP";"Developing";"Americas";"Latin America and the Caribbean";"Guadeloupe";.;.;.;.
+"95";"Guam";"GU";"GUM";"Developing";"Oceania";"Micronesia";"Guam";29,4;29,4;"yes";"yes"
+"96";"Guatemala";"GT";"GTM";"Developing";"Americas";"Latin America and the Caribbean";"Guatemala";23,2;5;"no";"no"
+"97";"Guernsey";"GG";"GGY";"Developed";"Europe";"Northern Europe";.;.;.;.;.
+"98";"Guinea";"GN";"GIN";"Developing";"Africa";"Sub-Saharan Africa";"Guinea";19,1;1;"no";"no"
+"99";"Guinea-Bissau";"GW";"GNB";"Developing";"Africa";"Sub-Saharan Africa";"Guinea-Bissau";18;.;"no";.
+"100";"Guyana";"GY";"GUY";"Developing";"Americas";"Latin America and the Caribbean";"Guyana";27,5;21,5;"no";"yes"
+"101";"Haiti";"HT";"HTI";"Developing";"Americas";"Latin America and the Caribbean";"Haiti";24,1;.;"no";.
+"102";"Heard Island and McDonald Islands";"HM";"HMD";"Developed";"Oceania";"Australia and New Zealand";"Heard Island and McDonald Islands";.;.;.;.
+"103";"Holy See";"VA";"VAT";"Developed";"Europe";"Southern Europe";"Holy See (Vatican City)";.;.;.;.
+"104";"Honduras";"HN";"HND";"Developing";"Americas";"Latin America and the Caribbean";"Honduras";24,4;10,7;"no";"no"
+"105";"Hungary";"HU";"HUN";"Developed";"Europe";"Eastern Europe";"Hungary";43,6;10,2;"yes";"no"
+"106";"Iceland";"IS";"ISL";"Developed";"Europe";"Northern Europe";"Iceland";37,1;6,1;"no";"no"
+"107";"India";"IN";"IND";"Developing";"Asia";"Southern Asia";"India";28,7;22,5;"no";"yes"
+"108";"Indonesia";"ID";"IDN";"Developing";"Asia";"South-eastern Asia";"Indonesia";31,1;16,5;"yes";"no"
+"109";"Iran (Islamic Republic of)";"IR";"IRN";"Developing";"Asia";"Southern Asia";"Iran";31,7;27,6;"yes";"yes"
+"110";"Iraq";"IQ";"IRQ";"Developing";"Asia";"Western Asia";"Iraq";21,2;25,6;"no";"yes"
+"111";"Ireland";"IE";"IRL";"Developed";"Europe";"Northern Europe";"Ireland";37,8;13,8;"no";"no"
+"112";"Isle of Man";"IM";"IMN";"Developed";"Europe";"Northern Europe";.;.;.;.;.
+"113";"Israel";"IL";"ISR";"Developed";"Asia";"Western Asia";"Israel";30,4;7,2;"no";"no"
+"114";"Italy";"IT";"ITA";"Developed";"Europe";"Southern Europe";"Italy";46,5;32,2;"yes";"yes"
+"115";"Jamaica";"JM";"JAM";"Developing";"Americas";"Latin America and the Caribbean";"Jamaica";29,4;24,2;"no";"yes"
+"116";"Japan";"JP";"JPN";"Developed";"Asia";"Eastern Asia";"Japan";48,6;3,6;"yes";"no"
+"117";"Jersey";"JE";"JEY";"Developed";"Europe";"Northern Europe";.;.;.;.;.
+"118";"Jordan";"JO";"JOR";"Developing";"Asia";"Western Asia";"Jordan";23,5;35,6;"no";"yes"
+"119";"Kazakhstan";"KZ";"KAZ";"Developing";"Asia";"Central Asia";"Kazakhstan";31,6;3,8;"yes";"no"
+"120";"Kenya";"KE";"KEN";"Developing";"Africa";"Sub-Saharan Africa";"Kenya";20;7,4;"no";"no"
+"121";"Kiribati";"KI";"KIR";"Developing";"Oceania";"Micronesia";"Kiribati";25,7;17,1;"no";"no"
+"122";"Kuwait";"KW";"KWT";"Developing";"Asia";"Western Asia";"Kuwait";29,7;15,4;"no";"no"
+"123";"Kyrgyzstan";"KG";"KGZ";"Developing";"Asia";"Central Asia";"Kyrgyzstan";27,3;14,2;"no";"no"
+"124";"Lao People's Democratic Republic";"LA";"LAO";"Developing";"Asia";"South-eastern Asia";"Laos";24;18,2;"no";"yes"
+"125";"Latvia";"LV";"LVA";"Developed";"Europe";"Northern Europe";"Latvia";44,4;12,2;"yes";"no"
+"126";"Lebanon";"LB";"LBN";"Developing";"Asia";"Western Asia";"Lebanon";33,7;.;"yes";.
+"127";"Lesotho";"LS";"LSO";"Developing";"Africa";"Sub-Saharan Africa";"Lesotho";24,7;34,4;"yes";"yes"
+"128";"Liberia";"LR";"LBR";"Developing";"Africa";"Sub-Saharan Africa";"Liberia";18;2,3;"no";"no"
+"129";"Libya";"LY";"LBY";"Developing";"Africa";"Northern Africa";"Libya";25,8;48,7;"yes";"yes"
+"130";"Liechtenstein";"LI";"LIE";"Developed";"Europe";"Western Europe";"Liechtenstein";43,7;.;"yes";.
+"131";"Lithuania";"LT";"LTU";"Developed";"Europe";"Northern Europe";"Lithuania";44,5;11,1;"yes";"no"
+"132";"Luxembourg";"LU";"LUX";"Developed";"Europe";"Western Europe";"Luxembourg";39,5;14,2;"no";"no"
+"133";"Madagascar";"MG";"MDG";"Developing";"Africa";"Sub-Saharan Africa";"Madagascar";20,3;1;"no";"no"
+"134";"Malawi";"MW";"MWI";"Developing";"Africa";"Sub-Saharan Africa";"Malawi";16,8;40,5;"no";"yes"
+"135";"Malaysia";"MY";"MYS";"Developing";"Asia";"South-eastern Asia";"Malaysia";29,2;10,5;"no";"no"
+"136";"Maldives";"MV";"MDV";"Developing";"Asia";"Southern Asia";"Maldives";29,5;15,9;"no";"no"
+"137";"Mali";"ML";"MLI";"Developing";"Africa";"Sub-Saharan Africa";"Mali";16;16,9;"no";"no"
+"138";"Malta";"MT";"MLT";"Developed";"Europe";"Southern Europe";"Malta";42,3;9,1;"no";"no"
+"139";"Marshall Islands";"MH";"MHL";"Developing";"Oceania";"Micronesia";"Marshall Islands";23,8;11;"no";"no"
+"140";"Martinique";"MQ";"MTQ";"Developing";"Americas";"Latin America and the Caribbean";"Martinique";.;.;.;.
+"141";"Mauritania";"MR";"MRT";"Developing";"Africa";"Sub-Saharan Africa";"Mauritania";21;15,2;"yes";"no"
+"142";"Mauritius";"MU";"MUS";"Developing";"Africa";"Sub-Saharan Africa";"Mauritius";36,3;23,9;"yes";"yes"
+"143";"Mayotte";"YT";"MYT";"Developing";"Africa";"Sub-Saharan Africa";"Mayotte";.;.;.;.
+"144";"Mexico";"MX";"MEX";"Developing";"Americas";"Latin America and the Caribbean";"Mexico";29,3;6,9;"no";"no"
+"145";"Micronesia (Federated States of)";"FM";"FSM";"Developing";"Oceania";"Micronesia";"Micronesia, Federated States of";26,3;18,9;"no";"no"
+"146";"Monaco";"MC";"MCO";"Developed";"Europe";"Western Europe";"Monaco";55,4;26,6;"yes";"yes"
+"147";"Mongolia";"MN";"MNG";"Developing";"Asia";"Eastern Asia";"Mongolia";29,8;16,8;"no";"yes"
+"148";"Montenegro";"ME";"MNE";"Developed";"Europe";"Southern Europe";.;.;.;.;.
+"149";"Montserrat";"MS";"MSR";"Developing";"Americas";"Latin America and the Caribbean";"Montserrat";34,8;.;"yes";.
+"150";"Morocco";"MA";"MAR";"Developing";"Africa";"Northern Africa";"Morocco";29,1;22,2;"yes";"yes"
+"151";"Mozambique";"MZ";"MOZ";"Developing";"Africa";"Sub-Saharan Africa";"Mozambique";17;7,4;"no";"no"
+"152";"Myanmar";"MM";"MMR";"Developing";"Asia";"South-eastern Asia";"Burma";29,2;2;"no";"no"
+"153";"Namibia";.;"NAM";"Developing";"Africa";"Sub-Saharan Africa";.;.;.;.;.
+"154";"Nauru";"NR";"NRU";"Developing";"Oceania";"Micronesia";"Nauru";27;26,6;"no";"yes"
+"155";"Nepal";"NP";"NPL";"Developing";"Asia";"Southern Asia";"Nepal";25,3;21,4;"no";"yes"
+"156";"Netherlands";"NL";"NLD";"Developed";"Europe";"Western Europe";"Netherlands";42,8;7,2;"yes";"no"
+"157";"New Caledonia";"NC";"NCL";"Developing";"Oceania";"Melanesia";"New Caledonia";32,9;38,4;"yes";"yes"
+"158";"New Zealand";"NZ";"NZL";"Developed";"Oceania";"Australia and New Zealand";"New Zealand";37,2;11,5;"yes";"no"
+"159";"Nicaragua";"NI";"NIC";"Developing";"Americas";"Latin America and the Caribbean";"Nicaragua";27,3;8,5;"no";"no"
+"160";"Niger";"NE";"NER";"Developing";"Africa";"Sub-Saharan Africa";"Niger";14,8;0,7;"no";"no"
+"161";"Nigeria";"NG";"NGA";"Developing";"Africa";"Sub-Saharan Africa";"Nigeria";18,6;13,8;"no";"no"
+"162";"Niue";"NU";"NIU";"Developing";"Oceania";"Polynesia";"Niue";.;.;.;.
+"163";"Norfolk Island";"NF";"NFK";"Developed";"Oceania";"Australia and New Zealand";"Norfolk Island";.;.;.;.
+"164";"Northern Mariana Islands";"MP";"MNP";"Developing";"Oceania";"Micronesia";"Northern Mariana Islands";32,8;.;"yes";.
+"165";"Norway";"NO";"NOR";"Developed";"Europe";"Northern Europe";"Norway";39,5;9,7;"no";"no"
+"166";"Oman";"OM";"OMN";"Developing";"Asia";"Western Asia";"Oman";26,2;13,7;"no";"no"
+"167";"Pakistan";"PK";"PAK";"Developing";"Asia";"Southern Asia";"Pakistan";22;7,8;"no";"no"
+"168";"Palau";"PW";"PLW";"Developing";"Oceania";"Micronesia";"Palau";33,9;5,6;"yes";"no"
+"169";"Panama";"PA";"PAN";"Developing";"Americas";"Latin America and the Caribbean";"Panama";30,1;10,2;"no";"no"
+"170";"Papua New Guinea";"PG";"PNG";"Developing";"Oceania";"Melanesia";"Papua New Guinea";24;3,6;"no";"no"
+"171";"Paraguay";"PY";"PRY";"Developing";"Americas";"Latin America and the Caribbean";"Paraguay";29,7;14,5;"no";"no"
+"172";"Peru";"PE";"PER";"Developing";"Americas";"Latin America and the Caribbean";"Peru";29,1;14,7;"no";"no"
+"173";"Philippines";"PH";"PHL";"Developing";"Asia";"South-eastern Asia";"Philippines";24,1;6,7;"no";"no"
+"174";"Pitcairn";"PN";"PCN";"Developing";"Oceania";"Polynesia";"Pitcairn Islands";.;.;.;.
+"175";"Poland";"PL";"POL";"Developed";"Europe";"Eastern Europe";"Poland";41,9;11,7;"no";"no"
+"176";"Portugal";"PT";"PRT";"Developed";"Europe";"Southern Europe";"Portugal";44,6;20,3;"yes";"yes"
+"177";"Puerto Rico";"PR";"PRI";"Developing";"Americas";"Latin America and the Caribbean";"Puerto Rico";43,6;26,6;"yes";"yes"
+"178";"Qatar";"QA";"QAT";"Developing";"Asia";"Western Asia";"Qatar";33,7;0,4;"yes";"no"
+"179";"Republic of Korea";"KR";"KOR";"Developing";"Asia";"Eastern Asia";"Korea, South";43,2;10,2;"yes";"no"
+"180";"Republic of Moldova";"MD";"MDA";"Developed";"Europe";"Eastern Europe";"Moldova";37,7;7,4;"no";"no"
+"181";"Romania";"RO";"ROU";"Developed";"Europe";"Eastern Europe";"Romania";42,5;16,2;"yes";"no"
+"182";"Russian Federation";"RU";"RUS";"Developed";"Europe";"Eastern Europe";"Russia";40,3;17;"no";"no"
+"183";"Rwanda";"RW";"RWA";"Developing";"Africa";"Sub-Saharan Africa";"Rwanda";19,7;20,6;"no";"yes"
+"184";"Réunion";"RE";"REU";"Developing";"Africa";"Sub-Saharan Africa";"Reunion";.;.;.;.
+"185";"Saint Barthélemy";"BL";"BLM";"Developing";"Americas";"Latin America and the Caribbean";.;.;.;.;.
+"186";"Saint Helena";"SH";"SHN";"Developing";"Africa";"Sub-Saharan Africa";"Saint Helena";.;.;.;.
+"187";"Saint Kitts and Nevis";"KN";"KNA";"Developing";"Americas";"Latin America and the Caribbean";"Saint Kitts and Nevis";36,5;.;"yes";.
+"188";"Saint Lucia";"LC";"LCA";"Developing";"Americas";"Latin America and the Caribbean";"Saint Lucia";36,9;46,2;"yes";"yes"
+"189";"Saint Martin (French Part)";"MF";"MAF";"Developing";"Americas";"Latin America and the Caribbean";.;.;.;.;.
+"190";"Saint Pierre and Miquelon";"PM";"SPM";"Developed";"Americas";"Northern America";"Saint Pierre and Miquelon";48,5;.;"yes";.
+"191";"Saint Vincent and the Grenadines";"VC";"VCT";"Developing";"Americas";"Latin America and the Caribbean";"Saint Vincent and the Grenadines";35,3;.;"yes";.
+"192";"Samoa";"WS";"WSM";"Developing";"Oceania";"Polynesia";"Samoa";25,6;31,9;"no";"yes"
+"193";"San Marino";"SM";"SMR";"Developed";"Europe";"Southern Europe";"San Marino";45,2;27,4;"yes";"yes"
+"194";"Sao Tome and Principe";"ST";"STP";"Developing";"Africa";"Sub-Saharan Africa";"Sao Tome and Principe";19,3;20,8;"no";"yes"
+"195";"Sark";"";"";"Developed";"Europe";"Northern Europe";.;.;.;.;.
+"196";"Saudi Arabia";"SA";"SAU";"Developing";"Asia";"Western Asia";"Saudi Arabia";30,8;28,8;"yes";"yes"
+"197";"Senegal";"SN";"SEN";"Developing";"Africa";"Sub-Saharan Africa";"Senegal";19,4;8,1;"no";"no"
+"198";"Serbia";"RS";"SRB";"Developed";"Europe";"Southern Europe";.;.;.;.;.
+"199";"Seychelles";"SC";"SYC";"Developing";"Africa";"Sub-Saharan Africa";"Seychelles";36,8;11,6;"yes";"no"
+"200";"Sierra Leone";"SL";"SLE";"Developing";"Africa";"Sub-Saharan Africa";"Sierra Leone";19,1;9,4;"no";"no"
+"201";"Singapore";"SG";"SGP";"Developing";"Asia";"South-eastern Asia";"Singapore";35,6;9,1;"yes";"no"
+"202";"Sint Maarten (Dutch part)";"SX";"SXM";"Developing";"Americas";"Latin America and the Caribbean";.;.;.;.;.
+"203";"Slovakia";"SK";"SVK";"Developed";"Europe";"Eastern Europe";"Slovakia";41,8;14,9;"no";"no"
+"204";"Slovenia";"SI";"SVN";"Developed";"Europe";"Southern Europe";"Slovenia";44,9;8,8;"yes";"no"
+"205";"Solomon Islands";"SB";"SLB";"Developing";"Oceania";"Melanesia";"Solomon Islands";23,5;1,3;"no";"no"
+"206";"Somalia";"SO";"SOM";"Developing";"Africa";"Sub-Saharan Africa";"Somalia";18,5;.;"no";.
+"207";"South Africa";"ZA";"ZAF";"Developing";"Africa";"Sub-Saharan Africa";"South Africa";28;53,4;"yes";"yes"
+"208";"South Georgia and the South Sandwich Islands";"GS";"SGS";"Developing";"Americas";"Latin America and the Caribbean";"South Georgia and the Islands";.;.;.;.
+"209";"South Sudan";"SS";"SSD";"Developing";"Africa";"Sub-Saharan Africa";.;.;.;.;.
+"210";"Spain";"ES";"ESP";"Developed";"Europe";"Southern Europe";"Spain";43,9;34,3;"yes";"yes"
+"211";"Sri Lanka";"LK";"LKA";"Developing";"Asia";"Southern Asia";"Sri Lanka";33,7;21;"yes";"yes"
+"212";"State of Palestine";"PS";"PSE";"Developing";"Asia";"Western Asia";"Gaza Strip";18;42,2;"no";"yes"
+"213";"State of Palestine";"PS";"PSE";"Developing";"Asia";"Western Asia";"West Bank";21,9;42,2;"no";"yes"
+"214";"Sudan";"SD";"SDN";"Developing";"Africa";"Northern Africa";"Sudan";18,3;.;"no";.
+"215";"Suriname";"SR";"SUR";"Developing";"Americas";"Latin America and the Caribbean";"Suriname";31;13,4;"no";"no"
+"216";"Svalbard and Jan Mayen Islands";"SJ";"SJM";"Developed";"Europe";"Northern Europe";"Svalbard";.;.;.;.
+"217";"Sweden";"SE";"SWE";"Developed";"Europe";"Northern Europe";"Sweden";41,1;16,8;"no";"no"
+"218";"Switzerland";"CH";"CHE";"Developed";"Europe";"Western Europe";"Switzerland";42,7;7,9;"yes";"no"
+"219";"Syrian Arab Republic";"SY";"SYR";"Developing";"Asia";"Western Asia";"Syria";23,5;35,8;"no";"yes"
+"220";"Tajikistan";"TJ";"TJK";"Developing";"Asia";"Central Asia";"Tajikistan";25,3;.;"no";.
+"221";"Thailand";"TH";"THA";"Developing";"Asia";"South-eastern Asia";"Thailand";39;3,7;"yes";"no"
+"222";"The former Yugoslav Republic of Macedonia";"MK";"MKD";"Developed";"Europe";"Southern Europe";"Macedonia";39;45,4;"no";"yes"
+"223";"Timor-Leste";"TL";"TLS";"Developing";"Asia";"South-eastern Asia";"East Timor";.;.;.;.
+"224";"Togo";"TG";"TGO";"Developing";"Africa";"Sub-Saharan Africa";"Togo";20;3,9;"no";"no"
+"225";"Tokelau";"TK";"TKL";"Developing";"Oceania";"Polynesia";"Tokelau";.;.;.;.
+"226";"Tonga";"TO";"TON";"Developing";"Oceania";"Polynesia";"Tonga";24,1;.;"no";.
+"227";"Trinidad and Tobago";"TT";"TTO";"Developing";"Americas";"Latin America and the Caribbean";"Trinidad and Tobago";37,8;8,7;"yes";"no"
+"228";"Tunisia";"TN";"TUN";"Developing";"Africa";"Northern Africa";"Tunisia";32,7;35;"yes";"yes"
+"229";"Turkey";"TR";"TUR";"Developing";"Asia";"Western Asia";"Turkey";32,2;20,2;"yes";"yes"
+"230";"Turkmenistan";"TM";"TKM";"Developing";"Asia";"Central Asia";"Turkmenistan";29,2;.;"no";.
+"231";"Turks and Caicos Islands";"TC";"TCA";"Developing";"Americas";"Latin America and the Caribbean";"Turks and Caicos Islands";34,6;.;"yes";.
+"232";"Tuvalu";"TV";"TUV";"Developing";"Oceania";"Polynesia";"Tuvalu";26,6;20,6;"no";"yes"
+"233";"Uganda";"UG";"UGA";"Developing";"Africa";"Sub-Saharan Africa";"Uganda";15,7;14,8;"no";"no"
+"234";"Ukraine";"UA";"UKR";"Developed";"Europe";"Eastern Europe";"Ukraine";41,2;17,9;"no";"yes"
+"235";"United Arab Emirates";"AE";"ARE";"Developing";"Asia";"Western Asia";"United Arab Emirates";38,4;6,9;"yes";"no"
+"236";"United Kingdom of Great Britain and Northern Ireland";"GB";"GBR";"Developed";"Europe";"Northern Europe";"United Kingdom";40,6;11,3;"no";"no"
+"237";"United Republic of Tanzania";"TZ";"TZA";"Developing";"Africa";"Sub-Saharan Africa";"Tanzania";18,2;3,9;"no";"no"
+"238";"United States Minor Outlying Islands";"UM";"UMI";"Developing";"Oceania";"Micronesia";"United States Minor Outlying Islands";.;.;.;.
+"239";"United States Virgin Islands";"VI";"VIR";"Developing";"Americas";"Latin America and the Caribbean";"Virgin Islands";41,8;.;"yes";.
+"240";"United States of America";"US";"USA";"Developed";"Americas";"Northern America";"United States";38,5;8,6;"yes";"no"
+"241";"Uruguay";"UY";"URY";"Developing";"Americas";"Latin America and the Caribbean";"Uruguay";35,5;25,9;"yes";"yes"
+"242";"Uzbekistan";"UZ";"UZB";"Developing";"Asia";"Central Asia";"Uzbekistan";30,1;.;"no";.
+"243";"Vanuatu";"VU";"VUT";"Developing";"Oceania";"Melanesia";"Vanuatu";23;.;"no";.
+"244";"Venezuela (Bolivarian Republic of)";"VE";"VEN";"Developing";"Americas";"Latin America and the Caribbean";"Venezuela";30;14,6;"no";"no"
+"245";"Viet Nam";"VN";"VNM";"Developing";"Asia";"South-eastern Asia";"Vietnam";31,9;6,9;"yes";"no"
+"246";"Wallis and Futuna Islands";"WF";"WLF";"Developing";"Oceania";"Polynesia";"Wallis and Futuna";34;.;"yes";.
+"247";"Western Sahara";"EH";"ESH";"Developing";"Africa";"Northern Africa";"Western Sahara";.;.;.;.
+"248";"Yemen";"YE";"YEM";"Developing";"Asia";"Western Asia";"Yemen";19,8;24,5;"no";"yes"
+"249";"Zambia";"ZM";"ZMB";"Developing";"Africa";"Sub-Saharan Africa";"Zambia";16,9;24;"no";"yes"
+"250";"Zimbabwe";"ZW";"ZWE";"Developing";"Africa";"Sub-Saharan Africa";"Zimbabwe";20,5;16,5;"no";"no"
+"251";"Åland Islands";"AX";"ALA";"Developed";"Europe";"Northern Europe";.;.;.;.;.
+"252";.;.;.;.;.;.;"Saint Barthelemy";45,6;.;.;.
+"253";.;.;.;.;.;.;"Isle of Man";44,6;10,1;.;.
+"254";.;"-";"-";.;.;.;"Guernsey";44,3;.;.;.
+"255";.;.;.;.;.;.;"Serbia";43,4;29,7;.;.
+"256";.;.;.;.;.;.;"Czechia";43,3;6,7;.;.
+"257";.;.;.;.;.;.;"Saint Helena, Ascension, and Tristan da Cunha";43,2;.;.;.
+"258";.;.;.;.;.;.;"Sint Maarten";41,1;.;.;.
+"259";.;.;.;.;.;.;"Montenegro";39,6;29,4;.;.
+"260";.;"-";"-";.;.;.;"Jersey";37,5;.;.;.
+"261";.;.;.;.;.;.;"Curacao";36,7;29,3;.;.
+"262";.;.;.;.;.;.;"Saint Martin";33,3;.;.;.
+"263";.;.;.;.;.;.;"Kosovo";30,5;55,4;.;.
+"264";.;.;.;.;.;.;"Cabo Verde";26,8;27,8;.;.
+"265";.;.;.;.;.;.;"Eswatini";23,7;47,1;.;.
+"266";.;"NA";"NAM";.;.;.;"Namibia";21,8;38;.;.
+"267";.;.;.;.;.;.;"Timor-Leste";19,6;13,2;.;.
+"268";.;.;.;.;.;.;"South Sudan";18,6;38,6;.;.
