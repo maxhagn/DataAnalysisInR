@@ -1,0 +1,392 @@
+---
+title: "Case Study 3"
+author: "Maximilian Hagn"
+date: "10. June 2022"
+subtitle: AKSTA Statistical Computing 107.258
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data
+
+In order to import the .csv file, the package "readr" must first be installed:
+
+```{r, echo=TRUE, eval=FALSE}
+
+install.packages("readr")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE}
+
+library("readr")
+
+```
+
+The .csv file can now be imported.
+
+```{r, echo=TRUE, eval=TRUE}
+
+countryData = read.csv("file_out.csv", sep=";", na.strings = c("-","."))
+
+```
+
+In order to filter the data, the package "dplyr" must be installed next.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE}
+
+install.packages("dplyr")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE}
+
+library("dplyr")
+
+```
+
+Now the missing values in the data set can be removed with the filter() function.
+
+```{r, echo=TRUE, eval=TRUE}
+
+countryData = filter(countryData, !is.na(Developed...Developing.Countries))
+
+```
+
+The next step is to convert the factors into numbers. This can be done with the function as.numeric. Furthermore, the commas in the numbers can be replaced by dots with the help of gsub().
+
+```{r, echo=TRUE, eval=TRUE}
+
+countryData$median_age = as.numeric(gsub(",", ".", countryData$median_age))
+countryData$youth_unempl_rate = as.numeric(gsub(",", ".", countryData$youth_unempl_rate))
+
+```
+
+# Task 1
+
+In order to create a plot with R, the package "ggplot2" must first be installed:
+
+```{r, echo=TRUE, eval=FALSE}
+
+install.packages("ggplot2")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE}
+
+library("ggplot2")
+
+```
+
+With the help of the ggplot() function a graph can be created. The previously imported set is selected as the underlying data set. On the x-axis the average age is placed and as for the fill property the development status is set. By applying the fill property, the data is automatically grouped according to the development status. Afterwards with geom_density() it is defined that this is a density graph. Furthermore the alpha value was set to 0.5 and the x-axis label was set. Finally, the position of the legend can be changed in the graph. This can be done with the theme() function and the legend.position property. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomDensityMedianAge <- ggplot(countryData, aes(x=median_age, fill=Developed...Developing.Countries)) + 
+  geom_density(alpha=0.5) + 
+  xlab("Median age of population") +
+  theme(legend.position="top", legend.title = element_blank())
+
+```
+
+Now the created graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomDensityMedianAge
+
+```
+
+Looking at the graph created, it can be seen that the average age in developed countries is higher than in developing countries. This can be explained, for example, by the lower medical infrastructure in the developing countries. Although the average birth rate in developing countries is higher than in Europe or The United States of America, for example, most people do not live to the same age as in developed countries, which means that the average age is reduced due to the large number of young people [https://de.statista.com/statistik/daten/studie/1724/umfrage/weltweite-fertilitaetsrate-nach-kontinenten/].
+
+# Task 2
+
+In this example, a graph is created showing the density of youth unemployment. The same procedure as in Task 1 can be used, but instead of the average age, the youth unemployment is plotted on the x-axis. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomDensityUnemplRate <- ggplot(countryData, aes(x=youth_unempl_rate, fill=Developed...Developing.Countries)) + 
+  geom_density(alpha=0.5) + xlab("Youth unemployment rate") + 
+  theme(legend.position="top", legend.title = element_blank())
+
+```
+
+Now the created graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomDensityUnemplRate
+
+```
+
+Looking at the graph, it can be seen that youth unemployment in the developed countries does not deviate as much as the average age. This can be explained by the fact that in the developed countries it is mainly skilled workers who are in demand, making it more difficult for young people without a degree or training to get a job. In developing countries, on the other hand, it is often necessary to rely on young jobseekers.
+
+# Task 3
+
+In this task, a barplot is to be created that shows the development status per continent. For this purpose, the name of the region can be plotted on the x-axis. The fill property determines that the statuses of the individual countries should be grouped and color-coded, resulting in a stacked barplot. In contrast to the previous tasks, we now use the geom_bar() function to specify that a barplot should be created. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomBarRegion <- ggplot(countryData, aes(x=Region.Name, fill=Developed...Developing.Countries)) + 
+  geom_bar() + 
+  xlab("Region Name") + 
+  ylab("Absolute Value") + 
+  theme(legend.title = element_blank())
+
+```
+
+Now the created graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomBarRegion
+
+```
+
+Looking at the graph created, it can be seen that in Africa all countries are developing countries, whereas in Europe every country is developed. In Oceania, only a few countries are developed. In the Americas and Asia, most countries are also developing countries. 
+
+To normalize the graph the package "scales" can be used. This must be installed first.
+
+```{r, echo=TRUE, eval=FALSE}
+
+install.packages("scales")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE,warning=FALSE}
+
+library("scales")
+
+```
+
+In contrast to the first graph, the value 1 is now plotted on the y-axis to determine that the height of all graphs should have the value 1. Furthermore, the function scale_y_continous() can be used to scale the values on the y-axis.
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomBarRegionNormal <- ggplot(countryData, aes(x=Region.Name, y=1, fill=Developed...Developing.Countries)) + 
+  geom_bar(stat = "identity", position = "fill") +
+  scale_y_continuous(labels = percent_format()) + 
+  xlab("Region Name") + 
+  ylab("Relative Value (%)") + 
+  theme(legend.title = element_blank())
+
+```
+
+Now the normalized graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomBarRegionNormal
+
+```
+
+If this graph is examined, it can be seen that the height of all bars is the same. The biggest difference can be seen at Oceania. In the last graph, it could be seen that, in absolute terms, these countries are less developed than Americas or Asia. In the relative comparison, it can now be seen that Oceania has more developed countries than Asia in relation to the number of countries.
+
+# Task 4
+
+To compare youth unemployment and average age, a plot can be created with one value plotted on the x-axis and one on the y-axis. Furthermore, a regression line is to be inserted, which can be done using the function geom_smooth(). The property method="lm" can be used to specify that a linear line should be drawn. The property "se" is used so that the standard deviation is not shown.
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomPointMedAgeUnemplRate <- ggplot(countryData, aes(x=median_age, y=youth_unempl_rate, color=Developed...Developing.Countries)) +
+  geom_point() + 
+  geom_smooth(method='lm', se=FALSE) +
+  xlab("Median Age") + 
+  ylab("Youth Unemployment Rate") + 
+  theme(legend.title = element_text("Region Name"))
+
+```
+
+Now the created graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomPointMedAgeUnemplRate
+
+```
+
+It can be seen that the regression line of the developing countries has a positive slope, whereas the regression line of the developed countries has a negative slope. In the case of developing countries, this means that the older the population, the higher the youth unemployment rate. Looking at the developed countries, youth unemployment is lower when the average age of the population is higher. Furthermore, it can be seen that the two straight lines intersect approximately at point (38,19). 
+
+# Task 5
+
+In order to create the boxplot, the youth unemployment rate is plotted on the x-axis and the area grouped by region is filled with a color. With the help of the function geom_boxplot() it can be specified that a boxplot should be created. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomBoxplotUnemplRate <- ggplot(countryData, aes(x=youth_unempl_rate, fill=Region.Name)) +
+  geom_boxplot() +
+  xlab("Youth Unemployment Rate")
+
+```
+
+Now the created boxplot can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomBoxplotUnemplRate
+
+```
+
+At first glance, there are hardly any differences in this graph. Generally it can be said that the median of all regions is about the same, with the median in Oceania being slightly higher than the others. The other striking thing is that Africa has the widest range between individual regions. In America, there are the smallest differences between the individual regions, but also outliers. There are also outliers in Oceania and Europe.  
+
+# Task 6
+
+The boxplot is created exactly as in the previous example, the only difference now being that the average age is plotted on the x-axis. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomBoxplotMedianAge <- ggplot(countryData, aes(x=median_age, fill=Region.Name)) +
+  geom_boxplot() +
+  xlab("Median Age")
+
+```
+
+Now the created boxplot can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomBoxplotMedianAge
+
+```
+
+In the previous example, the boxplots showed only small differences, but if the mean age is taken into account, clear differences can be seen. The graph shows that the average age in Africa is the lowest and that the range in the individual regions is also very small. Furthermore, it can be seen that the average age is highest in Europe, although here, too, there is only a slight variation between the regions. Americas has the second largest average age with a slightly larger range. The range in Oceania and Asia is about the same, with the median in Asia being slightly higher.  
+
+# Task 7
+
+The first step is to manipulate the data set. The arrange() function can be used to sort the columns. Then the data is grouped by subregion and region using the group_by() function. Furthermore, rows that do not contain values are removed. With the help of summarise() the median of all subregions can be calculated and saved.  
+
+```{r, echo=TRUE, eval=TRUE}
+
+subRegionUnemplRate <- countryData %>%
+    arrange(Sub.region.Name, youth_unempl_rate, Region.Name) %>%
+    group_by(Sub.region.Name, Region.Name) %>%
+    filter(!is.na(youth_unempl_rate)) %>%
+    filter(!is.na(median_age)) %>%
+    summarise(unemploymentRateMean = mean(youth_unempl_rate), na.rm = TRUE, .groups="keep")
+
+```
+
+To sort the obtained data in the graph in ascending order, the package "forcats" is to be used. This must be installed first.
+
+```{r, echo=TRUE, eval=FALSE}
+
+install.packages("forcats")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE}
+
+library("forcats")
+
+```
+
+Next, the color palette for colorblind people is created, using the suggested palette [http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/]. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+colorBlindPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+```
+
+After all preparations have been made, the plot can now be created. The previously manipulated data set is used for this purpose. The x-axis shows the average youth unemployment rate and the y-axis is sorted in ascending order using the fct_reorder() function. Furthermore, the regions are colored. The scale_color_manual() can be used to apply the previously created color palette for color blind people. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomPointMeanUnemplRate <- ggplot(subRegionUnemplRate, aes(x=unemploymentRateMean, y=fct_reorder(Sub.region.Name, unemploymentRateMean), color=Region.Name)) + 
+  geom_point() + 
+  scale_colour_manual(values=colorBlindPalette) +
+  xlab("Mean Youth Uneployment Rate") +
+  ylab("Sub Region")
+
+```
+
+Now the created graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomPointMeanUnemplRate
+
+```
+
+# Task 8
+
+For this task, the data set suggested in the task specification was used [https://data.worldbank.org/indicator/SP.POP.TOTL?end=2020&start=2020]. This data set can now be imported using the read.csv() function.
+
+```{r, echo=TRUE, eval=TRUE}
+
+populationData = read.csv("population.csv", sep=",", header=TRUE)
+
+```
+
+As a next step the select() function can be used to select the relevant rows. The country codes are needed to join the two datasets and the column X2020 contains the population numbers for the year 2020
+
+```{r, echo=TRUE, eval=TRUE}
+
+population2020Data <- populationData %>% select("Country.Code", "X2020")
+
+```
+
+After the relevant columns have been selected, the two data sets can be joined with a "left_join". The "ISO.3166.3" will be bound to the "Country Codes".
+
+```{r, echo=TRUE, eval=TRUE}
+
+countryPopulationData <- countryData %>% left_join(population2020Data, by = c("ISO.3166.3" = "Country.Code"))
+
+```
+
+# Task 9
+
+First the package "plotly" must be installed:
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE}
+
+install.packages("plotly")
+
+```
+
+Afterwards the library can be included:
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE}
+
+library("plotly")
+
+```
+
+Now a scatterplot can be created with the help of ggplot. For this purpose, the data set created in task 8 is selected. The average age is plotted on the x-axis and the youth unemployment rate on the y-axis. The development status is selected as the coloring. 
+
+```{r, echo=TRUE, eval=TRUE}
+
+geomPointPopulation <- ggplot(countryPopulationData, aes(x=median_age, y=youth_unempl_rate, color=Developed...Developing.Countries, size=X2020, text=country)) +
+  geom_point() +  
+  xlab("Median Age") + 
+  ylab("Youth Unemployment Rate")
+
+```
+
+As a last step, the functionality can be added that it is possible to hover over single data values to get more information. The function ggplotly() can be used for this purpose. This function is given the previously created graph and further determines that there should be a "tooltip".
+
+```{r, echo=TRUE, eval=TRUE}
+  
+geomPointWithTooltip <- ggplotly(geomPointPopulation, tooltip = c("text", "x", "y", "size"))
+
+```
+
+Now the interactive graph can be displayed.
+
+```{r, echo=TRUE, eval=TRUE, message=FALSE, warning=FALSE}
+
+geomPointWithTooltip
+
+```
